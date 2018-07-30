@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+
 import JokeContainer from './JokeContainer';
+import Header from './Header';
 
 class App extends Component {
     render () {
-        return <JokeContainer />
+        return (
+            <div id="app">
+                <Header title="Jokester" />
+                <JokeContainer />
+            </div>
+        );
     }
 }
 

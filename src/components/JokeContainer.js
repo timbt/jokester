@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Welcome from './Welcome';
 import Joke from './Joke';
 import JokeButton from './JokeButton';
+import '../styles/JokeContainer.css'
 
 // Thanks to 15Dkatz for the great API
 const JOKE_API = 'https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev/random_joke';
@@ -41,7 +42,7 @@ class JokeContainer extends Component {
       <Welcome />;
 
     return (
-      <div className="JokeContainer">
+      <div className="jokeContainer">
         {content}
         <JokeButton welcome={this.state.welcome} onClick={this.getJoke}/>
       </div>
